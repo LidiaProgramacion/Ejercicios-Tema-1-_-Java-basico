@@ -1,0 +1,28 @@
+package ejerciciosTema1;
+public class Coche {
+    //Atributos Coche
+    public byte numPuertas;
+    public String marca;
+    public float potencia;
+    public String color;
+    public boolean electrico;
+    public char contaminacion;
+    public long numBastidor;
+}
+class ProbarCoche {
+   public static void main(String[] args) {
+        int num = 5;
+        Coche C1 = new Coche();
+        C1.color = "negro";
+        C1.numPuertas = 5;
+        C1.marca = "Range Rover";
+        C1.potencia = 95.5f;
+        C1.electrico = true;
+        C1.contaminacion = 'B';
+        C1.numBastidor = 4782431;
+        System.out.println("El Coche C1 tiene " + C1.numPuertas + " puertas" + ", es de color " + C1.color
+                + ", es de la marca " + C1.marca + " tiene " + C1.potencia + " de potencia" +", " +
+                "tiene etiqueta " + C1.contaminacion + ",es coche electrico: " + C1.electrico +
+                " y número de bastidor " + C1.numBastidor);
+    }
+}
